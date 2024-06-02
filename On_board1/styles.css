@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #A306B6;
+    color: white;
+    text-align: center;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer les éléments horizontalement */
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer les éléments horizontalement */
+    justify-content: center;
+    width: 100%;
+    /* S'assurer que le conteneur prend toute la largeur */
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+    /* Ajouter un espace entre le logo et les autres éléments */
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    /* Ajouter un espace entre le logo et la navigation */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.responsive-logo-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer les éléments horizontalement */
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    /* Réduire l'espace entre l'avatar et le texte */
+}
+
+.Avatar {
+    width: 100px;
+    /* Réduire la taille de l'avatar pour qu'il soit mieux aligné */
+    border-radius: 50%;
+    border: 0.30rem solid white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: black;
+}
+
+.recent-articles {
+    font-size: 20px;
+    text-align: center;
+    color: #A306B6;
+    margin: 0;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    /* Assurer la direction par défaut en colonne */
+    justify-content: center;
+    /* Centrer verticalement */
+    align-items: center;
+    /* Centrer horizontalement */
+    margin-bottom: 20px;
+}
+
+.article {
+    background-color: #D9D9D9;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.article img {
+    max-width: 70%;
+    height: auto;
+}
+
+.article-button {
+    background-color: #A306B6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.about {
+    font-size: 20px;
+    text-align: center;
+    color: #A306B6;
+    margin: 100px 0;
+}
+
+.texte {
+    font-size: 20px;
+    color: black;
+}
+
+.freepicks {
+    color: #A306B6;
+}
+
+footer {
+    background-color: #D9D9D9;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+/* Media query pour les grands écrans */
+@media (min-width: 992px) {
+    header {
+        height: 40vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin-bottom: 0;
+    }
+
+    .nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin-top: 0;
+    }
+
+    .responsive-logo-avatar {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+
+    }
+
+    .Avatar {
+        width: 200px;
+        margin-left: 150px;
+    }
+
+    h1 {
+        margin: 0;
+
+
+    }
+
+    .articles {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .article {
+        width: 30%;
+        height: auto;
+    }
+
+    .texte {
+        padding: 100px;
+        text-align: left;
+    }
+}
